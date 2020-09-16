@@ -1,0 +1,22 @@
+sudo: false
+language: python
+python:
+  - '3.8'
+dist: bionic
+cache:
+  directories:
+    - $HOME/.cache/pip
+install:
+  - pip3 install --upgrade pip "poetry>=1.0.10"
+script:
+  - make -C docsource/ html
+  - touch docsource/build/html/.nojekyll
+before_deploy:
+    - poetry build
+deploy:
+  - provider: pages:git
+    verbose: true
+    token: $GITHUB_TOKEN
+    edge: true
+    local_dir: ./docsource/build/html
+    keep_history: true
