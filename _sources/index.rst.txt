@@ -11,6 +11,13 @@ Welcome to iSamples-Central's documentation!
    :caption: Contents:
 
 
+Testing plantuml:
+
+.. uml::
+
+   Alice -> Bob: Hi!
+   Alice <- Bob: How are you?
+
 
 Indices and tables
 ==================
