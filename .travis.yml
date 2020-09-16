@@ -9,14 +9,15 @@ cache:
 install:
   - pip3 install --upgrade pip "poetry>=1.0.10"
 script:
+  - poetry install
   - make -C docsource/ html
   - touch docsource/build/html/.nojekyll
-before_deploy:
-    - poetry build
 deploy:
-  - provider: pages:git
+  - provider: pages
     verbose: true
-    token: $GITHUB_TOKEN
-    edge: true
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
     local_dir: ./docsource/build/html
     keep_history: true
+    on:
+      branch: master
