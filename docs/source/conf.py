@@ -78,6 +78,7 @@ html_theme_options = {
   'globaltoc_collapse': False,
   # If True, show hidden TOC entries
   'globaltoc_includehidden': True,
+  'google_analytics_account':'G-SBC4F8JP05',
 }
 
 html_sidebars = {
