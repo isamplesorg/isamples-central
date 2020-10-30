@@ -26,6 +26,7 @@ sphinx-book-theme = "^0.0.37"
 nbsphinx = ">=0.8.0"
 igsn-lib = {git = "https://github.com/isamplesorg/igsn_lib.git", rev = "main"}
 sphinx-material = {git = "https://github.com/bashtage/sphinx-material.git"}
+pandoc = "^1.0.2"
 
 [tool.poetry.dev-dependencies]
 pytest = ">=6"
