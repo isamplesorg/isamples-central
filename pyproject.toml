@@ -6,23 +6,29 @@ authors = ["Dave <datadavev@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-sphinx = "^3.2.1"
-jupyter = "^1.0.0"
-jupyterlab = "^2.2.8"
+sphinx = ">=3.2.1"
+jupyter = ">=1.0.0"
+jupyterlab = ">=2.2.8"
 jupyter-sphinx = "^0.3.1"
 myst-nb = "^0.10.1"
 sphinxcontrib-bibtex = "^1.0.0"
 sphinx-tabs = "^1.3.0"
 sphinx-thebe = "^0.0.7"
 pallets_sphinx_themes = "^1.2.3"
-requests = "^2.24.0"
+requests = ">=2.24.0"
 graphviz = "^0.14.1"
 sphinxcontrib-needs = "^0.5.6"
-numpy = "^1.19.2"
+numpy = ">=1.19.2"
 sphinxcontrib-plantuml = "^0.18.1"
+sphinx_issues = "^1.2.0"
+sphinx-autobuild = "^2020.9.1"
+sphinx-book-theme = "^0.0.37"
+nbsphinx = ">=0.8.0"
+igsn-lib = {git = "https://github.com/isamplesorg/igsn_lib.git", rev = "main"}
+sphinx-material = {git = "https://github.com/bashtage/sphinx-material.git"}
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = ">=6"
 
 [build-system]
 requires = ["poetry>=0.12"]
