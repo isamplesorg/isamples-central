@@ -18,6 +18,7 @@ jobs:
 
       - name: Install Poetry
         run: |
+          sudo apt install pandoc
           pip install setuptools
           pip install poetry
         shell: bash
