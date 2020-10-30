@@ -4,4 +4,4 @@ image:https://github.com/isamplesorg/isamples-central/workflows/Build%20Pages/ba
 
 iSamples Central provides services for discovering and resolving material sample identifiers.
 
-Documentation is available at https://isamplesorg.github.io/isamples-central/[isamplesorg.github.io.isamples-central]
+Documentation is available at https://isamplesorg.github.io/isamples-central/[isamplesorg.github.io/isamples-central]
