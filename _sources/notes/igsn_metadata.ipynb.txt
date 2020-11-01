@@ -373,7 +373,7 @@
     "def _propValue(v):\n",
     "    v = v.strip()\n",
     "    try:\n",
-    "        return _urivalue(v)\n",
+    "        return _uriValue(v)\n",
     "    except:\n",
     "        pass\n",
     "    #Not a URI so must be a quoted thing.\n",
